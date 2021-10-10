@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myFont;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$blue: #0083b0;
+$red: #ff0080;
+$gray: #e5e5e5;
+//page 2
+
+$green: #5bcdc6;
+// Breakpoints
+// @media (min-width: 64em){
+//     // styles go here
+//   }
+
+// 640px, 1024px, 1400px
+$breakpoints-up: (
+  "sm": "576px",
+  "md": " 768px",
+  "lg": "992px",
+  "xlg": "1200px",
+  "xxl": "1400px",
+);
+
+// 639px, 1023px, 1399px
+$breakpoints-down: (
+  "sm": "575px",
+  "md": " 767px",
+  "lg": "991px",
+  "xlg": "1199px",
+  "xxl": "1399px",
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: myFont;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.wrappers {
+  height: 110%;
+  background: linear-gradient(121.73deg, #8c7fdb 11.91%, rgba(239, 116, 116, 0) 68.51%);
+  background-size: cover;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 7.5rem;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu li {
+  margin-left: 5em;
+}
+
+.menu span {
+  color: #00b4db;
+}
+
+.menu span:hover {
+  color: #0083b0;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.menu a {
+  text-decoration: none;
+  font-family: myFont;
+  font-size: 22px;
+  color: #ad5389;
+}
+
+.menu a:hover {
+  color: #ff0080;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-rows: 400px 400px;
+      grid-template-rows: 400px 400px;
+}
+
+.content-about {
+  padding: 5%;
+  margin-top: auto;
+}
+
+.content-about h5 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 0.625rem;
+}
+
+.content-about p {
+  color: white;
+}
+
+.background-img {
+  background: url("/img/page-3/-wzNB4Fsoa0.svg") no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin: 0;
+}
+
+.background-img:hover {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+@media (max-width: 920px) {
+  .menu {
+    display: none;
+  }
+  .container {
+    padding: 0 10%;
+  }
+}
+/*# sourceMappingURL=about.css.map */
