@@ -1,0 +1,132 @@
+@import "var";
+
+body {
+  /* text-align: center; */
+  background: #23507a;
+  font-size: 16px;
+}
+.background {
+  background: url("/img/page-2/Component\ 1\ \(2\).svg") no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  height: 9.375rem;
+  justify-content: space-evenly;
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
+  .menu {
+    list-style-type: none;
+    display: flex;
+
+    li {
+      margin-left: 5em;
+    }
+    span {
+      color: #00b4db;
+    }
+    span:hover {
+      color: #0083b0;
+      transition: color 0.3s ease;
+    }
+    a {
+      text-decoration: none;
+      font-family: myFont;
+      font-size: 22px;
+      color: #ad5389;
+    }
+    a:hover {
+      color: #ff0080;
+      transition: all 0.3s ease;
+    }
+  }
+}
+section {
+  height: 100%;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 5%;
+  max-width: 1200px;
+}
+.row {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 4em;
+}
+.cebu-t {
+  color: $green;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 3rem;
+  white-space: nowrap;
+
+  margin: 1.875em 0 0 0;
+}
+.cebu-map {
+  margin: 1.875em 0 0em 2em;
+  width: 100%;
+}
+.img-body {
+  width: 85%;
+  height: 360px;
+  background: url("/img/page-2/2.svg") no-repeat center;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+.img-body-2 {
+  width: 85%;
+  height: 360px;
+  background: url("/img/page-2/1.svg") no-repeat center;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+.img-body-3 {
+  width: 85%;
+  height: 360px;
+  background: url("/img/page-2/3.jpg") no-repeat center;
+  background-size: cover;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+@media (max-width: 1200px) {
+  .col-8,
+  .col-4 {
+    width: 100%;
+  }
+
+  .navbar .menu {
+    display: none;
+  }
+  .cebu-map,
+  .img-body,
+  .img-body-2,
+  .img-body-3 {
+    margin: 0;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 4em;
+  }
+  .img-body-2 {
+    background-position-y: -10px;
+  }
+  .cebu-map {
+    margin-top: auto;
+  }
+}
+[class*="img"]:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s;
+}
